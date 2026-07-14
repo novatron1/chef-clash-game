@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Basil">
+  <defs>
+    <linearGradient id="basilLeafA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7df08b"/>
+      <stop offset="100%" stop-color="#2b9f4a"/>
+    </linearGradient>
+    <linearGradient id="basilLeafB" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#44c96a"/>
+      <stop offset="100%" stop-color="#1d7e3b"/>
+    </linearGradient>
+  </defs>
+  <path d="M120 188c0-66 18-104 58-134-2 69-26 126-58 134Z" fill="url(#basilLeafA)"/>
+  <path d="M120 188c0-66-18-104-58-134 2 69 26 126 58 134Z" fill="url(#basilLeafB)"/>
+  <path d="M120 64v128" stroke="#e8ffe9" stroke-width="6" stroke-linecap="round"/>
+  <path d="M102 114c18 10 30 22 38 38M138 114c-18 10-30 22-38 38" stroke="#e8ffe9" stroke-opacity=".34" stroke-width="4" stroke-linecap="round"/>
+</svg>

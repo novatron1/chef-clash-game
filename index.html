@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0d0a0f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Chef Clash</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="src/data.js" defer></script>
+  <script src="src/recipe-library.js" defer></script>
+  <script src="src/assets-manifest.js" defer></script>
+  <script src="src/assets-reference.js" defer></script>
+  <script src="src/scoring.js" defer></script>
+  <script src="src/ui.js" defer></script>
+  <script src="src/audio.js" defer></script>
+  <script src="src/minigames.js" defer></script>
+  <script src="src/career.js" defer></script>
+  <script src="src/open-kitchen.js" defer></script>
+  <script src="src/game.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <img src="assets/ui/logo.svg" alt="" class="brand-mark" />
+        <div>
+          <p class="eyebrow">Chef Clash</p>
+          <h1>Prep. Perform. Prevail.</h1>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button id="installBtn" class="ghost hidden">Install</button>
+        <button id="homeBtn" class="ghost">Home</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="homeScreen" class="screen active">
+        <div class="hero-grid">
+          <article class="hero-card glass">
+            <p class="hero-kicker">Real kitchen showdown</p>
+            <h2 class="hero-title">Chef Clash</h2>
+            <p class="hero-copy">
+              Build plated dishes, survive timed kitchen minigames, and outscore rival chefs in a cinematic cooking show face-off.
+            </p>
+            <div class="hero-actions">
+              <button id="quickBattleBtn">Quick Battle</button>
+              <button id="careerModeBtn" class="secondary">Career Mode</button>
+              <button id="openKitchenBtn" class="secondary">Open Kitchen</button>
+              <button id="recipeLibraryBtn" class="ghost">Recipe Library</button>
+              <button id="assetReferenceBtn" class="ghost">Asset Reference</button>
+            </div>
+            <div class="hero-stats">
+              <div><span>Quick Battle</span><strong>1v1</strong></div>
+              <div><span>Career Mode</span><strong>World bosses</strong></div>
+              <div><span>Mobile First</span><strong>PWA ready</strong></div>
+            </div>
+          </article>
+
+          <aside class="setup-card glass">
+            <div class="card-head">
+              <div>
+                <p class="eyebrow">Match Setup</p>
+                <h3>Dial the heat</h3>
+              </div>
+              <span class="pill" id="bestPill">Best 0</span>
+            </div>
+
+            <div class="form-grid">
+              <label>Player 1<input id="p1Name" maxlength="18" value="Chef Nova" /></label>
+              <label>Player 2<input id="p2Name" maxlength="18" value="Chef Blaze" /></label>
+              <label>Battle type
+                <select id="modeSelect">
+                  <option value="quick">Quick Battle</option>
+                  <option value="local">Local Face-Off</option>
+                  <option value="openKitchen">Open Kitchen</option>
+                </select>
+              </label>
+              <label>Difficulty
+                <select id="difficultySelect">
+                  <option value="normal">Normal</option>
+                  <option value="easy">Easy</option>
+                  <option value="hard">Hard</option>
+                </select>
+              </label>
+              <label>Cost mode
+                <select id="costModeSelect">
+                  <option value="standard">Standard cost</option>
+                  <option value="open">Open cost</option>
+                </select>
+              </label>
+              <label>Ingredient set
+                <select id="pantryStyleSelect">
+                  <option value="full">Full pantry</option>
+                  <option value="classic">Classic pantry</option>
+                </select>
+              </label>
+              <label>Coach mode
+                <select id="coachModeSelect">
+                  <option value="guided">Guided</option>
+                  <option value="off">Off</option>
+                  <option value="strong">Chef Coach</option>
+                </select>
+              </label>
+              <label>Action speed
+                <select id="speedSelect">
+                  <option value="normal">Normal</option>
+                  <option value="fast">Fast</option>
+                  <option value="slow">Slow</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="home-preview">
+              <div class="home-stage">
+                <img src="assets/backgrounds/modern_industrial_kitchen_studio_set.png" alt="" class="home-stage-bg" />
+                <div class="home-chefs">
+                  <div class="chef-portrait left">
+                    <img src="assets/chefs/chef_01_chop_pose.png" alt="" />
+                    <span>Player Station</span>
+                  </div>
+                  <div class="chef-portrait right">
+                    <img src="assets/chefs/chef_02_chop_pose.png" alt="" />
+                    <span>Rival Station</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="buildScreen" class="screen">
+        <div class="screen-head">
+          <div>
+            <p class="eyebrow">Build Station</p>
+            <h2 id="buildTitle">Chef Nova's Dish</h2>
+          </div>
+          <div class="screen-actions">
+            <span class="pill" id="playerPill">P1</span>
+            <button id="switchPlayerBtn" class="secondary">Switch Chef</button>
+            <button id="randomizeBtn" class="secondary">Randomize</button>
+            <button id="clearBtn" class="ghost">Clear</button>
+          </div>
+        </div>
+
+        <div class="three-col">
+          <aside class="glass panel">
+            <div class="card-head">
+              <h3>Ingredient Sections</h3>
+              <span class="pill" id="costPill">Cost 16</span>
+            </div>
+            <div id="categoryTabs" class="category-tabs"></div>
+            <div id="ingredientGrid" class="ingredient-grid"></div>
+          </aside>
+
+          <section class="glass panel build-preview">
+            <div class="plate-stage">
+              <div class="plate-ring"></div>
+              <div class="plate-media" id="plateMedia">
+                <img id="baseArt" src="assets/ingredients/tomato.svg" alt="" />
+                <div id="dishStack" class="dish-stack"></div>
+              </div>
+            </div>
+            <div class="selected-list" id="selectedList"></div>
+            <div class="meter-block">
+              <div class="meter-row">
+                <span>Combo meter</span><strong id="comboText">0%</strong>
+              </div>
+              <div class="meter"><span id="comboBar"></span></div>
+              <p id="comboHints" class="tiny-note">Choose ingredients to discover combo bonuses.</p>
+            </div>
+          </section>
+
+          <aside class="glass panel">
+            <div class="card-head">
+              <h3>Cook Controls</h3>
+              <span class="pill" id="selectedCount">0 / 5</span>
+            </div>
+            <div class="field">
+              <label>Base ingredient
+                <select id="baseSelect"></select>
+              </label>
+            </div>
+            <div class="field">
+              <label>Plating style
+                <select id="plateSelect"></select>
+              </label>
+            </div>
+            <div class="field">
+              <label>Cooking method</label>
+              <div id="methodGrid" class="method-grid"></div>
+            </div>
+            <div class="slider-stack">
+              <label>
+                <span>Oven / Heat Temp</span>
+                <b id="tempLabel">375°F</b>
+                <input id="tempRange" type="range" min="250" max="550" step="5" value="375" />
+              </label>
+              <label>
+                <span>Cook Time</span>
+                <b id="timeLabel">18 min</b>
+                <input id="timeRange" type="range" min="2" max="60" step="1" value="18" />
+              </label>
+              <label>
+                <span>Amount / Portion Size</span>
+                <b id="amountLabel">3 portions</b>
+                <input id="amountRange" type="range" min="1" max="10" step="1" value="3" />
+              </label>
+            </div>
+            <div class="stat-pills">
+              <div><span>Doneness</span><strong id="donenessReadout">Good</strong></div>
+              <div><span>Control</span><strong id="controlReadout">Stable</strong></div>
+              <div><span>Risk</span><strong id="riskReadout">Low</strong></div>
+            </div>
+            <div class="coach-box">
+              <div class="card-head">
+                <h3>Chef Coach</h3>
+                <button id="coachBtn" class="ghost">Apply tip</button>
+              </div>
+              <p id="coachLines" class="tiny-note">Pick your base and ingredients. I’ll call the cook.</p>
+            </div>
+            <div class="build-footer">
+              <button id="lockInBtn" class="gold">Lock Dish</button>
+              <button id="startCookBtn">Start Cook-Off</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="careerScreen" class="screen">
+        <div class="screen-head">
+          <div>
+            <p class="eyebrow">Career Mode</p>
+            <h2>World Boss Chefs</h2>
+          </div>
+          <div class="screen-actions">
+            <div class="career-stat"><span>Rank</span><strong id="careerRank">Rookie</strong></div>
+            <div class="career-stat"><span>Fans</span><strong id="careerFans">0</strong></div>
+            <div class="career-stat"><span>Trophies</span><strong id="careerTrophies">0/8</strong></div>
+          </div>
+        </div>
+        <div class="glass panel">
+          <div class="world-map" id="worldMap"></div>
+          <div class="career-grid" id="careerGrid"></div>
+        </div>
+      </section>
+
+      <section id="cookScreen" class="screen">
+        <div class="screen-head">
+          <div>
+            <p class="eyebrow">Live Cook-Off</p>
+            <h2 id="cookTitle">Kitchen Arena</h2>
+          </div>
+          <div class="screen-actions">
+            <div class="duel-card">
+              <strong id="cookP1Name">Chef Nova</strong>
+              <span id="cookP1Dish" class="tiny-note">Dish</span>
+            </div>
+            <div class="duel-vs">VS</div>
+            <div class="duel-card">
+              <strong id="cookP2Name">Chef Blaze</strong>
+              <span id="cookP2Dish" class="tiny-note">Dish</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cook-grid">
+          <section class="glass panel arena-panel">
+            <div class="arena" id="arena">
+              <img src="assets/backgrounds/modern_industrial_kitchen_studio_set.png" alt="" class="arena-bg" />
+              <div class="arena-overlay"></div>
+              <div class="cook-live-hud">
+                <div class="hud-item"><span>Heat</span><strong id="heatHud">375°F</strong></div>
+                <div class="hud-item"><span>Time</span><strong id="timeHud">18m</strong></div>
+                <div class="hud-item"><span>Hype</span><strong id="hypeHud">0%</strong></div>
+              </div>
+              <div class="chef-cards">
+              <div class="chef-card left">
+                  <img src="assets/chefs/chef_01_chop_pose.png" alt="" />
+                  <span id="showCardLeftName">Chef Nova</span>
+                </div>
+                <div class="chef-card right">
+                  <img src="assets/chefs/chef_02_chop_pose.png" alt="" />
+                  <span id="showCardRightName">Chef Blaze</span>
+                </div>
+              </div>
+              <div class="dish-reveal" id="dishReveal"></div>
+              <div id="flame" class="flame"></div>
+              <div id="steamTrail" class="steam-trail"></div>
+              <div id="coachCallout" class="coach-callout">Chef Coach ready.</div>
+              <div id="roundBanner" class="round-banner">Kitchen loading...</div>
+            </div>
+          </section>
+
+          <aside class="glass panel action-panel">
+            <div class="card-head">
+              <h3>Prep Mini-Game</h3>
+              <span id="actionScorePill" class="pill">Mini-Game +0</span>
+            </div>
+            <p id="actionInstruction" class="tiny-note">Tap when the marker lands in the safe zone.</p>
+            <div id="visualMiniGame" class="visual-mini-game"></div>
+            <div class="meter action-meter">
+              <span id="actionSafeZone" class="safe-zone"></span>
+              <span id="actionFill" class="fill"></span>
+              <span id="actionMarker" class="marker"></span>
+            </div>
+            <div class="action-cta">
+              <button id="actionTapBtn" class="gold">Tap / Hold</button>
+              <button id="actionSkipBtn" class="ghost">Skip</button>
+            </div>
+            <div class="action-log">
+              <div><strong id="actionPhaseLabel">Phase</strong><span id="actionPhaseStat">Waiting...</span></div>
+              <div><strong>Coach</strong><span id="actionCoachLine">Listen for the callout.</span></div>
+            </div>
+            <div class="battle-steps">
+              <div id="log1" class="log-step"><strong>Prep</strong><span class="tiny-note">Chop and slice.</span></div>
+              <div id="log2" class="log-step"><strong>Fire</strong><span class="tiny-note">Control the flames.</span></div>
+              <div id="log3" class="log-step"><strong>Plate</strong><span class="tiny-note">Finish with style.</span></div>
+            </div>
+            <div class="hype-box">
+              <div class="meter-row"><span>🔥 Crowd Hype</span><strong id="hypeLabel">0%</strong></div>
+              <div class="meter"><span id="hypeMeter"></span></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="resultsScreen" class="screen">
+        <div class="screen-head">
+          <div>
+            <p class="eyebrow">Judges</p>
+            <h2 id="winnerTitle">Winner</h2>
+          </div>
+          <div class="screen-actions">
+            <button id="saveRecipeBtn" class="secondary hidden">Save Recipe</button>
+            <button id="judgeTestBtn" class="ghost hidden">Judge Test</button>
+            <button id="playAgainBtn">Play Again</button>
+            <button id="backHomeBtn" class="secondary">Back Home</button>
+          </div>
+        </div>
+        <div id="resultsGrid" class="results-grid"></div>
+        <div class="glass panel judge-panel">
+          <h3>Judge Comments</h3>
+          <div id="judgeComments" class="judge-comments"></div>
+        </div>
+      </section>
+
+      <section id="libraryScreen" class="screen">
+        <div class="screen-head">
+          <div>
+            <p class="eyebrow">Library</p>
+            <h2>Saved Recipes</h2>
+          </div>
+          <div class="screen-actions">
+            <button id="libraryBackBtn" class="secondary">Back Home</button>
+          </div>
+        </div>
+
+        <div class="library-layout">
+          <aside class="glass panel library-list-panel">
+            <div class="card-head">
+              <div>
+                <h3>Recipe Cards</h3>
+                <p class="tiny-note">Saved dishes survive reloads and can be reopened in Open Kitchen.</p>
+              </div>
+              <span class="pill" id="recipeLibraryCount">0</span>
+            </div>
+            <div id="recipeLibraryGrid" class="recipe-library-grid"></div>
+          </aside>
+
+          <section class="glass panel library-detail-panel">
+            <div id="recipeLibraryDetail" class="recipe-library-detail"></div>
+          </section>
+        </div>
+      </section>
+
+      <section id="assetsScreen" class="screen">
+        <div class="screen-head">
+          <div>
+            <p class="eyebrow">Reference</p>
+            <h2>Asset Library</h2>
+          </div>
+          <div class="screen-actions">
+            <span class="pill">All assets labeled</span>
+            <span class="pill" id="assetReferenceCount">0</span>
+            <button id="assetsBackBtn" class="secondary">Back Home</button>
+          </div>
+        </div>
+        <div class="glass panel asset-reference-panel">
+          <p class="tiny-note">Browse every asset by folder, name, and file path. The cleaned PNGs are centered for easier swapping in the game.</p>
+          <div id="assetReferenceGrid" class="asset-reference-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="careerModal" class="modal hidden">
+      <div class="modal-card glass">
+        <button id="closeCareerModalBtn" class="modal-close ghost">×</button>
+        <div id="modalAvatar" class="modal-avatar">🔥</div>
+        <h3 id="modalName">Chef Boss</h3>
+        <p id="modalRegion" class="tiny-note">Region</p>
+        <p id="modalNote" class="coach-box tiny-note"></p>
+        <button id="fightBossBtn" class="gold">Challenge Boss</button>
+      </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+  </div>
+</body>
+</html>

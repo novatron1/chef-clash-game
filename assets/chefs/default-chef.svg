@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-label="Chef silhouette">
+  <defs>
+    <linearGradient id="s" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d6c1a7"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f9f4ed"/>
+      <stop offset="1" stop-color="#d7c9ba"/>
+    </linearGradient>
+  </defs>
+  <path d="M137 115c0-44 35-75 73-75 42 0 73 31 73 75 0 16-4 31-13 43-7 10-10 16-10 25v11H160v-11c0-9-3-15-10-25-9-12-13-27-13-43Z" fill="url(#s)"/>
+  <path d="M82 465c0-75 53-134 128-134h0c75 0 128 59 128 134v22H82z" fill="url(#coat)"/>
+  <path d="M125 236c18-16 40-26 60-26h50c20 0 42 10 60 26l32 29v127H93V265z" fill="#111219" opacity=".9"/>
+  <circle cx="210" cy="154" r="22" fill="#d8b08a"/>
+  <path d="M150 125c16-28 40-44 60-44s44 16 60 44" fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round"/>
+  <path d="M150 338l60-54 60 54" fill="none" stroke="#f4f0ea" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

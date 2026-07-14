@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Pie">
+  <defs>
+    <radialGradient id="f" cx="50%" cy="42%" r="70%">
+      <stop offset="0" stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#c2410c"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="none"/>
+  <ellipse cx="256" cy="314" rx="174" ry="92" fill="#4b2a12"/>
+  <ellipse cx="256" cy="294" rx="160" ry="78" fill="#d97706"/>
+  <path d="M128 290c26-55 80-89 128-89 49 0 102 34 128 89" fill="url(#f)"/>
+  <path d="M148 267c40-30 77-44 108-44 38 0 78 12 109 44" fill="none" stroke="#fff7ed" stroke-width="16" stroke-linecap="round" opacity=".45"/>
+  <path d="M156 303c28 18 61 27 100 27 40 0 75-9 100-27" fill="none" stroke="#7c2d12" stroke-width="16" stroke-linecap="round" opacity=".35"/>
+  <circle cx="205" cy="267" r="12" fill="#7c2d12" opacity=".45"/>
+  <circle cx="256" cy="250" r="12" fill="#7c2d12" opacity=".45"/>
+  <circle cx="310" cy="268" r="12" fill="#7c2d12" opacity=".45"/>
+  <path d="M116 300c22 16 43 24 63 24" fill="none" stroke="#e7b27a" stroke-width="18" stroke-linecap="round"/>
+  <path d="M332 324c20 0 40-8 60-24" fill="none" stroke="#e7b27a" stroke-width="18" stroke-linecap="round"/>
+</svg>

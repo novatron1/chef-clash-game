@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Beef bites">
+  <defs>
+    <linearGradient id="beef" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9d3a31"/>
+      <stop offset="100%" stop-color="#5e1f1d"/>
+    </linearGradient>
+  </defs>
+  <rect x="68" y="84" width="48" height="48" rx="14" fill="url(#beef)"/>
+  <rect x="120" y="92" width="42" height="42" rx="12" fill="url(#beef)"/>
+  <rect x="92" y="136" width="50" height="50" rx="14" fill="url(#beef)"/>
+  <path d="M84 106c12-10 22-14 32-12" stroke="#ffb59f" stroke-opacity=".28" stroke-width="6" stroke-linecap="round"/>
+</svg>

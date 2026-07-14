@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Cream">
+  <defs>
+    <linearGradient id="creamBottle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff6ed"/>
+      <stop offset="100%" stop-color="#dccbb4"/>
+    </linearGradient>
+    <linearGradient id="creamAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3dac1"/>
+      <stop offset="100%" stop-color="#c9ab82"/>
+    </linearGradient>
+  </defs>
+  <path d="M92 70h56l8 20v82c0 12-10 22-22 22h-28c-12 0-22-10-22-22V90l8-20Z" fill="url(#creamBottle)"/>
+  <path d="M102 104h36v18h-36z" fill="url(#creamAccent)"/>
+  <path d="M108 52h24" stroke="#caa97f" stroke-width="10" stroke-linecap="round"/>
+  <path d="M94 146c12 6 24 9 36 9 12 0 24-3 36-9" fill="none" stroke="#fff8f0" stroke-opacity=".7" stroke-width="9" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Trophy">
+  <defs>
+    <linearGradient id="trophyGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0a2"/>
+      <stop offset="45%" stop-color="#f8c84f"/>
+      <stop offset="100%" stop-color="#c97a18"/>
+    </linearGradient>
+    <linearGradient id="trophyBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5f3d21"/>
+      <stop offset="100%" stop-color="#27170d"/>
+    </linearGradient>
+  </defs>
+  <path d="M82 50h76v20c0 26-12 46-38 54-26-8-38-28-38-54V50Z" fill="url(#trophyGold)"/>
+  <path d="M70 56c0 18 8 34 20 44-20 0-38-16-38-36V44h18v12Z" fill="url(#trophyGold)"/>
+  <path d="M170 56c0 18-8 34-20 44 20 0 38-16 38-36V44h-18v12Z" fill="url(#trophyGold)"/>
+  <path d="M112 124h16v26h-16z" fill="url(#trophyGold)"/>
+  <path d="M88 150h64v18H88z" fill="url(#trophyBase)"/>
+  <path d="M102 168h36v18h-36z" fill="url(#trophyBase)"/>
+  <circle cx="120" cy="80" r="16" fill="#fff7c7" opacity=".38"/>
+</svg>

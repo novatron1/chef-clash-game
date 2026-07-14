@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Mozzarella">
+  <defs>
+    <radialGradient id="mozCheese" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#fffef8"/>
+      <stop offset="100%" stop-color="#e9e1d6"/>
+    </radialGradient>
+    <linearGradient id="mozAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf7f0"/>
+      <stop offset="100%" stop-color="#cfc2b2"/>
+    </linearGradient>
+  </defs>
+  <path d="M66 132c0-28 26-52 54-52 30 0 54 24 54 52s-24 52-54 52c-28 0-54-24-54-52Z" fill="url(#mozCheese)"/>
+  <path d="M86 132c0-16 14-30 34-30 18 0 34 14 34 30 0 18-16 30-34 30-20 0-34-12-34-30Z" fill="url(#mozAccent)" opacity=".55"/>
+  <path d="M92 114c10 6 24 9 40 9" stroke="#fff" stroke-opacity=".46" stroke-width="8" stroke-linecap="round"/>
+</svg>

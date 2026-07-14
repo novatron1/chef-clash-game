@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Truffle">
+  <defs>
+    <radialGradient id="truffleBody" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#6a4d3a"/>
+      <stop offset="100%" stop-color="#241612"/>
+    </radialGradient>
+    <linearGradient id="truffleShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b08a67"/>
+      <stop offset="100%" stop-color="#b08a67" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M72 144c0-34 22-68 48-68s48 34 48 68c0 24-20 40-48 40s-48-16-48-40Z" fill="url(#truffleBody)"/>
+  <path d="M86 114c8-8 18-13 30-15 16-2 30 1 42 11" fill="none" stroke="url(#truffleShine)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M88 150c10 10 22 15 32 15 12 0 24-5 32-15" fill="none" stroke="#c7a27d" stroke-opacity=".25" stroke-width="6" stroke-linecap="round"/>
+</svg>

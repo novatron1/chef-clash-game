@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Scallion">
+  <defs>
+    <linearGradient id="scallionLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9af55f"/>
+      <stop offset="100%" stop-color="#2d8b3f"/>
+    </linearGradient>
+    <radialGradient id="scallionBulb" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#fff9f1"/>
+      <stop offset="100%" stop-color="#efe1d6"/>
+    </radialGradient>
+  </defs>
+  <path d="M98 176c-8-38 2-76 22-112 20 36 30 74 22 112" fill="url(#scallionLeaf)"/>
+  <path d="M120 68c12 34 12 70 0 108" fill="none" stroke="#b8f69b" stroke-width="7" stroke-linecap="round"/>
+  <ellipse cx="120" cy="184" rx="34" ry="18" fill="url(#scallionBulb)"/>
+</svg>

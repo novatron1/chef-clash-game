@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Ginger">
+  <defs>
+    <radialGradient id="gingerRoot" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#f3c28e"/>
+      <stop offset="100%" stop-color="#9a5e2d"/>
+    </radialGradient>
+    <linearGradient id="gingerLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9ef07a"/>
+      <stop offset="100%" stop-color="#348d43"/>
+    </linearGradient>
+  </defs>
+  <path d="M92 160c0-30 22-58 54-58 24 0 36 15 36 34 0 26-20 50-56 50-22 0-34-10-34-26Z" fill="url(#gingerRoot)"/>
+  <path d="M112 114c18-20 36-30 56-32-8 16-18 26-32 32-8 4-16 4-24 0Z" fill="url(#gingerLeaf)"/>
+  <path d="M106 138c10-10 24-16 40-18" stroke="#ffd9aa" stroke-opacity=".35" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Crab">
+  <defs>
+    <linearGradient id="crabBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7c59"/>
+      <stop offset="100%" stop-color="#b92f2b"/>
+    </linearGradient>
+  </defs>
+  <circle cx="120" cy="124" r="46" fill="url(#crabBody)"/>
+  <path d="M90 104c-10-14-20-20-32-22 6 12 10 22 12 32" fill="none" stroke="url(#crabBody)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M150 104c10-14 20-20 32-22-6 12-10 22-12 32" fill="none" stroke="url(#crabBody)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M100 154l-20 18M140 154l20 18" stroke="#ffb69e" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="106" cy="120" r="5" fill="#fff7f0"/>
+  <circle cx="134" cy="120" r="5" fill="#fff7f0"/>
+</svg>

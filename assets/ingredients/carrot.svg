@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Carrot">
+  <defs>
+    <linearGradient id="carrotBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb15a"/>
+      <stop offset="100%" stop-color="#e36916"/>
+    </linearGradient>
+    <linearGradient id="carrotTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9ef06e"/>
+      <stop offset="100%" stop-color="#2f8b3d"/>
+    </linearGradient>
+  </defs>
+  <path d="M116 64c18 18 28 37 30 58 2 20-4 38-18 54-14-16-20-34-18-54 2-21 12-40 30-58Z" fill="url(#carrotBody)"/>
+  <path d="M118 54c-2 10-6 20-14 28 12 0 22-3 30-10-2 10-1 18 4 26 6-8 12-20 14-34-14 0-24-3-34-10Z" fill="url(#carrotTop)"/>
+  <path d="M106 110c12 6 24 9 34 9" stroke="#ffd9a6" stroke-opacity=".35" stroke-width="6" stroke-linecap="round"/>
+</svg>

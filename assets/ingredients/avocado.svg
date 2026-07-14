@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Avocado">
+  <defs>
+    <radialGradient id="avocadoOuter" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#a7e06b"/>
+      <stop offset="100%" stop-color="#3b8f31"/>
+    </radialGradient>
+    <radialGradient id="avocadoInner" cx="45%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#f1e9b9"/>
+      <stop offset="100%" stop-color="#b9d47b"/>
+    </radialGradient>
+  </defs>
+  <path d="M120 48c42 0 72 38 72 76 0 48-35 74-72 74s-72-26-72-74c0-38 30-76 72-76Z" fill="url(#avocadoOuter)"/>
+  <path d="M120 70c27 0 48 24 48 51 0 31-21 54-48 54s-48-23-48-54c0-27 21-51 48-51Z" fill="url(#avocadoInner)"/>
+  <circle cx="120" cy="126" r="22" fill="#8b5a2b"/>
+  <circle cx="120" cy="126" r="10" fill="#c98d49"/>
+  <path d="M106 94c10-10 22-14 34-14" stroke="#eff8cb" stroke-width="8" stroke-linecap="round" opacity=".45"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Sugar">
+  <rect width="512" height="512" fill="none"/>
+  <path d="M140 150h232l28 48-44 172H156l-44-172z" fill="#fffdf7" stroke="#e5e7eb" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M184 198h144l22 136H162z" fill="#f8fafc" opacity=".9"/>
+  <circle cx="214" cy="256" r="10" fill="#dbeafe"/>
+  <circle cx="250" cy="230" r="8" fill="#bfdbfe"/>
+  <circle cx="292" cy="266" r="9" fill="#e0f2fe"/>
+  <circle cx="316" cy="236" r="7" fill="#c7d2fe"/>
+</svg>

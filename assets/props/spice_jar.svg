@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Spice jar">
+  <defs>
+    <linearGradient id="spiceJar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#efad61"/>
+      <stop offset="100%" stop-color="#a64a17"/>
+    </linearGradient>
+    <linearGradient id="spiceCap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6d4b31"/>
+      <stop offset="100%" stop-color="#3a2416"/>
+    </linearGradient>
+  </defs>
+  <path d="M90 68h60l6 18v86c0 12-10 20-22 20h-28c-12 0-22-8-22-20V86l6-18Z" fill="url(#spiceJar)"/>
+  <rect x="88" y="62" width="64" height="18" rx="8" fill="url(#spiceCap)"/>
+  <path d="M104 116h32" stroke="#ffe0b5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M108 132h24" stroke="#ffe0b5" stroke-opacity=".55" stroke-width="8" stroke-linecap="round"/>
+</svg>

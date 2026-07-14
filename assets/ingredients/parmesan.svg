@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Parmesan">
+  <defs>
+    <linearGradient id="parmCheese" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0a8"/>
+      <stop offset="100%" stop-color="#d1a744"/>
+    </linearGradient>
+  </defs>
+  <path d="M74 164h92l-20-72H92l-18 72Z" fill="url(#parmCheese)"/>
+  <path d="M92 96h46l6 20H88l4-20Z" fill="#ffe89a"/>
+  <circle cx="102" cy="136" r="6" fill="#f2cd60"/>
+  <circle cx="126" cy="146" r="4" fill="#f2cd60"/>
+  <circle cx="136" cy="124" r="5" fill="#f2cd60"/>
+</svg>

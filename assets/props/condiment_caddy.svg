@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Condiment caddy">
+  <defs>
+    <linearGradient id="caddyWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b37b46"/>
+      <stop offset="100%" stop-color="#6f4627"/>
+    </linearGradient>
+  </defs>
+  <path d="M72 152h96l-8 38H80l-8-38Z" fill="url(#caddyWood)"/>
+  <path d="M84 82h16v70H84zM112 72h16v80h-16zM140 86h16v66h-16z" fill="#f0f4f7" opacity=".82"/>
+  <path d="M84 92h16M112 86h16M140 96h16" stroke="#8d6038" stroke-width="8" stroke-linecap="round"/>
+</svg>

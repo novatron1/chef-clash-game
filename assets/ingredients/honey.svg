@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Honey">
+  <defs>
+    <linearGradient id="honeyJar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd86f"/>
+      <stop offset="100%" stop-color="#c97c13"/>
+    </linearGradient>
+    <linearGradient id="honeyGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff6b4" stop-opacity=".95"/>
+      <stop offset="100%" stop-color="#fff6b4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M96 64h48l18 30v86c0 10-8 18-18 18H96c-10 0-18-8-18-18V94l18-30Z" fill="url(#honeyJar)"/>
+  <path d="M88 98c10-8 22-12 32-12 14 0 26 4 38 12" fill="none" stroke="#fff3ae" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+  <path d="M108 50c0-10 6-18 12-18s12 8 12 18" fill="none" stroke="#9f5b08" stroke-width="10" stroke-linecap="round"/>
+  <ellipse cx="120" cy="142" rx="42" ry="44" fill="url(#honeyGlow)"/>
+  <path d="M120 112c18 0 32 13 32 29 0 19-14 34-32 34s-32-15-32-34c0-16 14-29 32-29Z" fill="#ffdd73" opacity=".78"/>
+  <path d="M120 126c8 0 14 6 14 14 0 9-6 16-14 16s-14-7-14-16c0-8 6-14 14-14Z" fill="#fff4b8" opacity=".6"/>
+</svg>

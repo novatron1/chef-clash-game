@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Sesame oil">
+  <defs>
+    <linearGradient id="sesameBottle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4c45f"/>
+      <stop offset="100%" stop-color="#8b5c1d"/>
+    </linearGradient>
+    <linearGradient id="sesameLabel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf0ce"/>
+      <stop offset="100%" stop-color="#d4be7a"/>
+    </linearGradient>
+  </defs>
+  <path d="M92 58h56l8 16v92c0 12-10 20-22 20h-28c-12 0-22-8-22-20V74l8-16Z" fill="url(#sesameBottle)"/>
+  <rect x="86" y="102" width="68" height="34" rx="10" fill="url(#sesameLabel)"/>
+  <circle cx="106" cy="118" r="4" fill="#8b5c1d"/>
+  <circle cx="120" cy="130" r="4" fill="#8b5c1d"/>
+  <circle cx="134" cy="118" r="4" fill="#8b5c1d"/>
+  <path d="M108 46h24" stroke="#f6de9f" stroke-width="10" stroke-linecap="round"/>
+</svg>

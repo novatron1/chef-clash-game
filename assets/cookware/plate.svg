@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Plate">
+  <defs>
+    <radialGradient id="plateRim" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#fffaf2"/>
+      <stop offset="100%" stop-color="#d5c7b4"/>
+    </radialGradient>
+  </defs>
+  <circle cx="120" cy="120" r="72" fill="url(#plateRim)"/>
+  <circle cx="120" cy="120" r="58" fill="#f9f4ed"/>
+  <circle cx="120" cy="120" r="44" fill="none" stroke="#e8c07b" stroke-opacity=".55" stroke-width="7"/>
+  <circle cx="120" cy="120" r="20" fill="#e8c07b" fill-opacity=".12"/>
+</svg>

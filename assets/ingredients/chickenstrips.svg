@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Chicken strips">
+  <defs>
+    <linearGradient id="stripMeat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f1c28d"/>
+      <stop offset="100%" stop-color="#c4834e"/>
+    </linearGradient>
+    <linearGradient id="stripCrust" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffefcf"/>
+      <stop offset="100%" stop-color="#f3b35d"/>
+    </linearGradient>
+  </defs>
+  <path d="M72 140c10-24 28-38 54-42 18 0 34 8 46 22-8 24-25 40-50 46-24 5-38 0-50-26Z" fill="url(#stripMeat)"/>
+  <path d="M86 132c8-14 20-22 34-24 10 4 18 12 24 24-10 10-22 16-36 18-12-2-18-7-22-18Z" fill="url(#stripCrust)" opacity=".8"/>
+  <path d="M96 118c10 4 22 6 36 6" stroke="#fff7e9" stroke-opacity=".36" stroke-width="6" stroke-linecap="round"/>
+</svg>

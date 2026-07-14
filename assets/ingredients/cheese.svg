@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Cheese">
+  <defs>
+    <linearGradient id="cheeseBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3bf"/>
+      <stop offset="100%" stop-color="#e0b84d"/>
+    </linearGradient>
+    <linearGradient id="cheeseShadow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8da" stop-opacity=".95"/>
+      <stop offset="100%" stop-color="#fff8da" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M66 160h108l-10-70H82l-16 70Z" fill="url(#cheeseBody)"/>
+  <path d="M84 90h52l8 18H80l4-18Z" fill="#f6d671"/>
+  <circle cx="104" cy="126" r="10" fill="#f0c655"/>
+  <circle cx="132" cy="140" r="7" fill="#f0c655"/>
+  <circle cx="146" cy="112" r="5" fill="#f0c655"/>
+  <path d="M84 100c18 10 38 16 62 16" stroke="url(#cheeseShadow)" stroke-width="8" stroke-linecap="round"/>
+</svg>

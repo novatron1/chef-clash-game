@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Lime">
+  <defs>
+    <radialGradient id="limeBody" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#f2ff9d"/>
+      <stop offset="58%" stop-color="#98e24f"/>
+      <stop offset="100%" stop-color="#3f9828"/>
+    </radialGradient>
+    <linearGradient id="limeHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffec6"/>
+      <stop offset="100%" stop-color="#fffec6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="120" cy="124" rx="78" ry="68" fill="url(#limeBody)"/>
+  <ellipse cx="98" cy="100" rx="30" ry="22" fill="url(#limeHighlight)"/>
+  <path d="M120 62c-6 26-6 80 0 134" stroke="#f7ffcd" stroke-width="8" stroke-linecap="round" opacity=".72"/>
+  <path d="M72 124c30-26 66-40 96-40" stroke="#f7ffcd" stroke-width="8" stroke-linecap="round" opacity=".62"/>
+  <path d="M82 100l76 76" stroke="#f7ffcd" stroke-width="8" stroke-linecap="round" opacity=".62"/>
+  <path d="M158 100l-76 76" stroke="#f7ffcd" stroke-width="8" stroke-linecap="round" opacity=".62"/>
+</svg>

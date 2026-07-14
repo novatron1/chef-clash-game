@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 128" role="img" aria-label="Smoke">
+  <defs>
+    <linearGradient id="smoke" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f2eb" stop-opacity=".95"/>
+      <stop offset="100%" stop-color="#3a3637" stop-opacity=".8"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="70" cy="82" rx="34" ry="20" fill="url(#smoke)" opacity=".88"/>
+  <ellipse cx="108" cy="66" rx="28" ry="18" fill="url(#smoke)" opacity=".82"/>
+  <ellipse cx="140" cy="78" rx="30" ry="18" fill="url(#smoke)" opacity=".8"/>
+  <ellipse cx="172" cy="62" rx="24" ry="16" fill="url(#smoke)" opacity=".72"/>
+  <path d="M56 82c6-18 15-31 28-38" stroke="#d8d0c8" stroke-width="10" stroke-linecap="round" opacity=".55" fill="none"/>
+  <path d="M96 67c8-17 21-27 32-31" stroke="#ddd6cf" stroke-width="9" stroke-linecap="round" opacity=".5" fill="none"/>
+  <path d="M130 79c7-14 18-23 29-26" stroke="#b9b2ad" stroke-width="9" stroke-linecap="round" opacity=".45" fill="none"/>
+</svg>

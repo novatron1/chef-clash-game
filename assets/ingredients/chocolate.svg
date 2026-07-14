@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Chocolate">
+  <defs>
+    <linearGradient id="chocBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7f4b2e"/>
+      <stop offset="100%" stop-color="#3d1f12"/>
+    </linearGradient>
+    <linearGradient id="chocWrap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f2ccb0"/>
+      <stop offset="100%" stop-color="#d39a6f"/>
+    </linearGradient>
+  </defs>
+  <path d="M68 118h104l-14 68H82l-14-68Z" fill="url(#chocBody)"/>
+  <path d="M80 106h80l-6 14H86l-6-14Z" fill="url(#chocWrap)"/>
+  <path d="M94 132h28v18H94zm34 0h28v18h-28zM94 154h28v18H94zm34 0h28v18h-28z" fill="#5a2e18" opacity=".6"/>
+</svg>

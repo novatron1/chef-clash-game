@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Chicken">
+  <defs>
+    <linearGradient id="chickenSkin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0c08f"/>
+      <stop offset="55%" stop-color="#d89b67"/>
+      <stop offset="100%" stop-color="#a96f42"/>
+    </linearGradient>
+    <linearGradient id="chickenFlesh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe0bf"/>
+      <stop offset="100%" stop-color="#f2b37f"/>
+    </linearGradient>
+  </defs>
+  <path d="M70 140c0-34 24-62 58-62 33 0 56 22 56 54 0 37-23 60-59 60-33 0-55-20-55-52Z" fill="url(#chickenSkin)"/>
+  <path d="M110 92c12 8 25 11 42 10-9 15-20 22-36 23-15-1-27-6-37-15 12-3 21-8 31-18Z" fill="url(#chickenFlesh)"/>
+  <path d="M85 146c14 10 31 16 50 16" stroke="#fff3e0" stroke-opacity=".28" stroke-width="6" stroke-linecap="round"/>
+</svg>

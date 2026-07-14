@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Pie crust">
+  <rect width="512" height="512" fill="none"/>
+  <circle cx="256" cy="260" r="148" fill="#c58b47"/>
+  <circle cx="256" cy="260" r="120" fill="#f2d2a0"/>
+  <path d="M256 122v40M256 358v40M118 260h40M354 260h40M160 164l28 28M324 324l28 28M160 356l28-28M324 192l28-28" stroke="#a16207" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="256" cy="260" r="86" fill="#b45309" opacity=".55"/>
+  <path d="M182 228c27-27 65-40 109-40" fill="none" stroke="#fff7ed" stroke-width="10" stroke-linecap="round" opacity=".3"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Shrimp">
+  <defs>
+    <linearGradient id="shrimpBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd3bf"/>
+      <stop offset="100%" stop-color="#f08e75"/>
+    </linearGradient>
+    <linearGradient id="shrimpTail" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9c77"/>
+      <stop offset="100%" stop-color="#c94f4f"/>
+    </linearGradient>
+  </defs>
+  <path d="M74 132c12-26 30-40 58-40 22 0 40 9 56 28-8 22-25 36-50 40-28 5-47-2-64-28Z" fill="url(#shrimpBody)"/>
+  <path d="M154 92l20 16-18 10z" fill="url(#shrimpTail)"/>
+  <path d="M92 118c12-10 26-14 42-14" stroke="#fff1ea" stroke-opacity=".4" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="92" cy="122" r="4" fill="#7e2c2c"/>
+</svg>

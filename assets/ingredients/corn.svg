@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Corn">
+  <defs>
+    <linearGradient id="cornKernel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffea6b"/>
+      <stop offset="100%" stop-color="#d9a825"/>
+    </linearGradient>
+    <linearGradient id="cornLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8de46c"/>
+      <stop offset="100%" stop-color="#2f8a3d"/>
+    </linearGradient>
+  </defs>
+  <path d="M92 86c24-10 32-10 56 0v68c-24 10-32 10-56 0V86Z" fill="url(#cornKernel)"/>
+  <path d="M82 112c8-18 18-30 30-36-2 16-3 30-2 44-9 3-18 0-28-8Z" fill="url(#cornLeaf)"/>
+  <path d="M158 112c-8-18-18-30-30-36 2 16 3 30 2 44 9 3 18 0 28-8Z" fill="url(#cornLeaf)"/>
+  <path d="M102 96v52M120 92v60M138 96v52" stroke="#fff1a9" stroke-opacity=".5" stroke-width="6" stroke-linecap="round"/>
+</svg>

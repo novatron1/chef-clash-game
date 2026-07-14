@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Salt shaker">
+  <defs>
+    <linearGradient id="saltBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#cfd7df"/>
+    </linearGradient>
+    <linearGradient id="saltCap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7e8a98"/>
+      <stop offset="100%" stop-color="#3e4751"/>
+    </linearGradient>
+  </defs>
+  <path d="M92 70h56l8 18v84c0 12-10 20-22 20h-28c-12 0-22-8-22-20V88l8-18Z" fill="url(#saltBody)"/>
+  <rect x="88" y="62" width="64" height="18" rx="8" fill="url(#saltCap)"/>
+  <circle cx="102" cy="102" r="3.5" fill="#8c96a1"/>
+  <circle cx="120" cy="100" r="3.5" fill="#8c96a1"/>
+  <circle cx="138" cy="102" r="3.5" fill="#8c96a1"/>
+  <circle cx="112" cy="118" r="3.5" fill="#8c96a1"/>
+  <circle cx="128" cy="118" r="3.5" fill="#8c96a1"/>
+</svg>

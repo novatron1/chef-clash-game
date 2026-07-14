@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Measuring cup">
+  <defs>
+    <linearGradient id="cupGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#edf7ff" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#9ab7cf" stop-opacity=".75"/>
+    </linearGradient>
+  </defs>
+  <path d="M88 70h62l14 110H82L88 70Z" fill="url(#cupGlass)" stroke="#c6d9ea" stroke-opacity=".7" stroke-width="4" />
+  <path d="M150 98c12 0 20 8 20 18s-8 18-20 18" fill="none" stroke="#c6d9ea" stroke-width="8" stroke-linecap="round"/>
+  <path d="M98 100h30M98 120h36M98 140h24" stroke="#6f8aa1" stroke-opacity=".6" stroke-width="6" stroke-linecap="round"/>
+</svg>

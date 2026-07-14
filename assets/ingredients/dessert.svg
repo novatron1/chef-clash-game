@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Dessert plate">
+  <defs>
+    <linearGradient id="dessertCake" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c86fa0"/>
+      <stop offset="100%" stop-color="#8f416f"/>
+    </linearGradient>
+    <linearGradient id="dessertTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8d69a"/>
+      <stop offset="100%" stop-color="#d8a950"/>
+    </linearGradient>
+  </defs>
+  <path d="M72 162h96l-12-54H84l-12 54Z" fill="url(#dessertCake)"/>
+  <path d="M84 108h72l-8-18H92l-8 18Z" fill="url(#dessertTop)"/>
+  <circle cx="120" cy="92" r="10" fill="#ff6b35"/>
+  <circle cx="102" cy="124" r="4" fill="#ffe7dd"/>
+  <circle cx="138" cy="124" r="4" fill="#ffe7dd"/>
+</svg>

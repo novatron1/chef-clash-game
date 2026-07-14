@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Squeeze bottle">
+  <defs>
+    <linearGradient id="squeezeBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4a35d"/>
+      <stop offset="100%" stop-color="#d14923"/>
+    </linearGradient>
+    <linearGradient id="squeezeCap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6d27c"/>
+      <stop offset="100%" stop-color="#b07c1e"/>
+    </linearGradient>
+  </defs>
+  <path d="M112 54c10 0 18 8 18 18v14l16 16v76c0 14-12 26-26 26h-6c-14 0-26-12-26-26v-76l16-16V72c0-10 8-18 18-18Z" fill="url(#squeezeBody)"/>
+  <path d="M98 50l24-18 12 18" fill="none" stroke="url(#squeezeCap)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M106 118h24" stroke="#fff1b1" stroke-opacity=".5" stroke-width="8" stroke-linecap="round"/>
+</svg>

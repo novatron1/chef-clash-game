@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Steak">
+  <defs>
+    <linearGradient id="steakMeat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a33a31"/>
+      <stop offset="55%" stop-color="#7d2d24"/>
+      <stop offset="100%" stop-color="#4f1714"/>
+    </linearGradient>
+    <linearGradient id="steakFat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe1be"/>
+      <stop offset="100%" stop-color="#f2bb8c"/>
+    </linearGradient>
+  </defs>
+  <path d="M60 122c0-31 26-58 62-58 38 0 62 20 62 50 0 34-24 66-64 66-34 0-60-24-60-58Z" fill="url(#steakMeat)"/>
+  <path d="M92 108c12-12 27-18 44-18" fill="none" stroke="url(#steakFat)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M92 146c12 8 27 12 42 12" fill="none" stroke="#f2bb8c" stroke-opacity=".22" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Cajun spice">
+  <defs>
+    <linearGradient id="cajunBottle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9c52"/>
+      <stop offset="100%" stop-color="#9b3415"/>
+    </linearGradient>
+    <linearGradient id="cajunCap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c36b"/>
+      <stop offset="100%" stop-color="#ad7d24"/>
+    </linearGradient>
+  </defs>
+  <path d="M92 66h56l6 20v86c0 12-10 20-22 20h-24c-12 0-22-8-22-20V86l6-20Z" fill="url(#cajunBottle)"/>
+  <rect x="90" y="62" width="60" height="18" rx="8" fill="url(#cajunCap)"/>
+  <path d="M104 122c10-8 20-10 32-8 4 6 4 12 0 18-10 4-20 4-32-2Z" fill="#ffd89a" opacity=".4"/>
+  <path d="M106 124h28M110 114h20" stroke="#fff3ca" stroke-opacity=".4" stroke-width="6" stroke-linecap="round"/>
+</svg>

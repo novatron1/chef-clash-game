@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Chef Clash icon">
+  <rect width="512" height="512" rx="120" fill="#0f0c12"/>
+  <circle cx="256" cy="256" r="178" fill="#ff6b35" opacity=".18"/>
+  <path d="M172 328c43-8 72-38 80-78 4-18 4-39-3-58 51 4 92 36 92 88 0 44-35 79-79 79-32 0-60-5-90-31Z" fill="#ffd78a"/>
+  <path d="M248 118c30 25 46 60 46 93 0 42-24 75-58 97 7-18 8-35 1-52-7-20-18-37-31-49 19-22 29-42 42-89Z" fill="#fff2c6"/>
+</svg>

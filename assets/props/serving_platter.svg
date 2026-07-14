@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Serving platter">
+  <defs>
+    <radialGradient id="platterRim" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#fff9ef"/>
+      <stop offset="100%" stop-color="#d7c0a3"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="120" cy="128" rx="84" ry="54" fill="url(#platterRim)"/>
+  <ellipse cx="120" cy="128" rx="64" ry="34" fill="#f9f2e7"/>
+  <path d="M82 128c16-16 34-24 38-24 4 0 22 8 38 24" fill="none" stroke="#e3b467" stroke-opacity=".55" stroke-width="6" stroke-linecap="round"/>
+</svg>

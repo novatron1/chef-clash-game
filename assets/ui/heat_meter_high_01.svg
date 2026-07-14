@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 128" role="img" aria-label="Heat meter high">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#26181a"/>
+      <stop offset="100%" stop-color="#12070c"/>
+    </linearGradient>
+    <linearGradient id="hot" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffe44f"/>
+      <stop offset="55%" stop-color="#ff8b2f"/>
+      <stop offset="100%" stop-color="#e61f24"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="228" height="116" rx="18" fill="url(#bg)" stroke="#6a3824" stroke-width="2"/>
+  <circle cx="120" cy="62" r="34" fill="none" stroke="#3f2727" stroke-width="12"/>
+  <path d="M88 70a32 32 0 1 1 64 0" fill="none" stroke="url(#hot)" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="120" cy="62" r="10" fill="#fff2b0" stroke="#a76a2a" stroke-width="2"/>
+  <path d="M120 62l28-4" stroke="#ffe15c" stroke-width="4" stroke-linecap="round"/>
+  <g stroke="#9a5d37" stroke-width="2" stroke-linecap="round">
+    <path d="M88 62h-8"/>
+    <path d="M104 38l-5-6"/>
+    <path d="M120 28v-8"/>
+    <path d="M136 38l5-6"/>
+    <path d="M152 62h8"/>
+  </g>
+  <path d="M148 44c10 5 16 12 16 20 0 11-9 20-20 20 6-5 7-12 4-18-2-5-6-9-11-12 5-1 8-5 11-10z" fill="#ff9e2f" opacity=".85"/>
+</svg>

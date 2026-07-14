@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Hot sauce">
+  <defs>
+    <linearGradient id="hotBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7249"/>
+      <stop offset="100%" stop-color="#ce201f"/>
+    </linearGradient>
+    <linearGradient id="hotCap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd06d"/>
+      <stop offset="100%" stop-color="#d78618"/>
+    </linearGradient>
+  </defs>
+  <path d="M112 56c10 0 18 8 18 18v14l16 18v66c0 14-12 26-26 26h-6c-14 0-26-12-26-26v-66l16-18V74c0-10 8-18 18-18Z" fill="url(#hotBody)"/>
+  <rect x="96" y="48" width="48" height="16" rx="7" fill="url(#hotCap)"/>
+  <path d="M108 128c10-10 18-15 26-15 0 14-8 25-26 32Z" fill="#fff1a9" opacity=".45"/>
+</svg>

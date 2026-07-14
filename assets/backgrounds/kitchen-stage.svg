@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-label="Kitchen stage background">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#20111a"/>
+      <stop offset=".7" stop-color="#0d0b11"/>
+      <stop offset="1" stop-color="#07060a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".25" r=".6">
+      <stop offset="0" stop-color="#ffcb73" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#ffcb73" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1440" height="900" fill="url(#bg)"/>
+  <rect width="1440" height="900" fill="url(#glow)"/>
+  <g opacity=".32" fill="#fff3d9">
+    <circle cx="220" cy="142" r="5"/><circle cx="270" cy="118" r="3"/><circle cx="1220" cy="120" r="4"/><circle cx="1140" cy="150" r="5"/>
+  </g>
+  <g opacity=".14">
+    <rect x="120" y="520" width="1200" height="44" rx="22" fill="#fff"/>
+    <rect x="160" y="600" width="1120" height="18" rx="9" fill="#fff"/>
+  </g>
+  <g opacity=".2" fill="#ff6b35">
+    <circle cx="480" cy="470" r="18"/><circle cx="960" cy="490" r="18"/><circle cx="730" cy="440" r="28"/>
+  </g>
+  <g opacity=".26" stroke="#fff" stroke-linecap="round">
+    <path d="M400 250v-95M520 250v-115M640 250v-75M760 250v-120M880 250v-90M1000 250v-108" stroke-width="18"/>
+  </g>
+</svg>

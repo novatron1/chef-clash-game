@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Apple">
+  <defs>
+    <radialGradient id="a" cx="40%" cy="32%" r="72%">
+      <stop offset="0" stop-color="#ffd7d7"/>
+      <stop offset="0.45" stop-color="#ef4444"/>
+      <stop offset="1" stop-color="#991b1b"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="none"/>
+  <path d="M263 112c8-28 24-42 49-48-2 27-15 48-43 64" fill="#6b4f2a"/>
+  <path d="M234 108c-34-18-48-45-45-74 31 7 52 24 61 54" fill="#1f7a3f"/>
+  <path d="M256 122c-85 0-136 63-136 133 0 84 62 165 136 165s136-81 136-165c0-70-51-133-136-133z" fill="url(#a)"/>
+  <path d="M174 208c18-22 43-34 77-34" fill="none" stroke="#ffe4e6" stroke-width="16" stroke-linecap="round" opacity=".45"/>
+  <circle cx="222" cy="183" r="12" fill="#fff" opacity=".4"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Pasta">
+  <defs>
+    <linearGradient id="pastaPasta" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fae2b8"/>
+      <stop offset="100%" stop-color="#d8b270"/>
+    </linearGradient>
+    <linearGradient id="pastaSauce" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f49a5a"/>
+      <stop offset="100%" stop-color="#c85f2a"/>
+    </linearGradient>
+  </defs>
+  <path d="M68 140c0-28 24-50 52-50s52 22 52 50-24 50-52 50-52-22-52-50Z" fill="url(#pastaPasta)"/>
+  <path d="M86 140c0-14 15-26 34-26s34 12 34 26-15 26-34 26-34-12-34-26Z" fill="url(#pastaSauce)"/>
+  <path d="M88 130c12-8 24-10 32-6" stroke="#fff4cf" stroke-opacity=".3" stroke-width="6" stroke-linecap="round"/>
+</svg>

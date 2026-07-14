@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="BBQ sauce">
+  <defs>
+    <linearGradient id="bbqJar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8f2918"/>
+      <stop offset="100%" stop-color="#43110a"/>
+    </linearGradient>
+    <linearGradient id="bbqLabel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0bf8f"/>
+      <stop offset="100%" stop-color="#c58447"/>
+    </linearGradient>
+  </defs>
+  <path d="M92 66h56l6 20v86c0 12-10 20-22 20h-24c-12 0-22-8-22-20V86l6-20Z" fill="url(#bbqJar)"/>
+  <rect x="88" y="110" width="64" height="34" rx="10" fill="url(#bbqLabel)"/>
+  <path d="M104 126h32" stroke="#5d2414" stroke-width="8" stroke-linecap="round"/>
+  <path d="M110 50h20" stroke="#e1b686" stroke-width="10" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 128" role="img" aria-label="Heat meter low">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#22171b"/>
+      <stop offset="100%" stop-color="#120c10"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f1c34f"/>
+      <stop offset="100%" stop-color="#ff8f32"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="228" height="116" rx="18" fill="url(#bg)" stroke="#4f3528" stroke-width="2"/>
+  <circle cx="120" cy="62" r="34" fill="none" stroke="#332426" stroke-width="12"/>
+  <path d="M94 70a26 26 0 1 1 52 0" fill="none" stroke="url(#amber)" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="120" cy="62" r="10" fill="#f4d98d" stroke="#8f5b26" stroke-width="2"/>
+  <path d="M120 62l22-18" stroke="#ffcf6a" stroke-width="4" stroke-linecap="round"/>
+  <g stroke="#805437" stroke-width="2" stroke-linecap="round">
+    <path d="M88 62h-8"/>
+    <path d="M120 28v-8"/>
+    <path d="M152 62h8"/>
+  </g>
+</svg>

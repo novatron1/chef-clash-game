@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Paprika">
+  <defs>
+    <linearGradient id="paprikaJar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff8a55"/>
+      <stop offset="100%" stop-color="#c73f1c"/>
+    </linearGradient>
+    <linearGradient id="paprikaCap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6b4a31"/>
+      <stop offset="100%" stop-color="#3a2619"/>
+    </linearGradient>
+  </defs>
+  <path d="M92 74h56l-4 24v78c0 10-8 18-18 18h-12c-10 0-18-8-18-18V98l-4-24Z" fill="url(#paprikaJar)"/>
+  <rect x="90" y="70" width="60" height="18" rx="8" fill="url(#paprikaCap)"/>
+  <circle cx="120" cy="138" r="18" fill="#ffcf8a" opacity=".22"/>
+  <path d="M104 138h32M108 126h24" stroke="#ffe8c5" stroke-opacity=".36" stroke-width="7" stroke-linecap="round"/>
+</svg>

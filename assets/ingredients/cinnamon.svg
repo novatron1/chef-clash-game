@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Cinnamon">
+  <rect width="512" height="512" fill="none"/>
+  <path d="M150 154c34-36 92-50 140-44 51 7 88 38 92 83 4 42-19 78-56 105-39 29-95 44-137 33-46-12-83-47-83-92 0-31 15-61 44-85z" fill="#7c3f1d"/>
+  <path d="M179 171c28-25 68-35 99-31 34 4 58 24 61 53 3 29-13 52-40 72-28 21-67 32-95 25-31-8-55-31-55-59 0-19 10-38 30-60z" fill="#a16207" opacity=".95"/>
+  <path d="M178 177c25-20 58-27 84-24" fill="none" stroke="#fcd34d" stroke-width="8" stroke-linecap="round" opacity=".4"/>
+  <path d="M173 234c30 9 66 8 113-4" fill="none" stroke="#fff7ed" stroke-width="10" stroke-linecap="round" opacity=".2"/>
+</svg>

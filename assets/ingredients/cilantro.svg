@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Cilantro">
+  <defs>
+    <linearGradient id="cilantroLeafA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8df38c"/>
+      <stop offset="100%" stop-color="#2c974a"/>
+    </linearGradient>
+    <linearGradient id="cilantroLeafB" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#67e07a"/>
+      <stop offset="100%" stop-color="#17753a"/>
+    </linearGradient>
+  </defs>
+  <path d="M120 186c0-58 14-92 38-120-3 58-18 104-38 120Z" fill="url(#cilantroLeafA)"/>
+  <path d="M120 186c0-58-14-92-38-120 3 58 18 104 38 120Z" fill="url(#cilantroLeafB)"/>
+  <path d="M120 70v120" stroke="#ecffe9" stroke-width="5" stroke-linecap="round"/>
+  <path d="M100 120c14 8 26 18 32 32M140 120c-14 8-26 18-32 32" stroke="#ecffe9" stroke-opacity=".32" stroke-width="4" stroke-linecap="round"/>
+</svg>

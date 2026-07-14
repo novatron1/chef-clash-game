@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Fish">
+  <defs>
+    <linearGradient id="fishBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#97e3f7"/>
+      <stop offset="60%" stop-color="#5cb9db"/>
+      <stop offset="100%" stop-color="#2f7698"/>
+    </linearGradient>
+  </defs>
+  <path d="M72 126c18-24 42-36 66-36 28 0 50 13 70 36-20 23-42 36-70 36-24 0-48-12-66-36Z" fill="url(#fishBody)"/>
+  <circle cx="92" cy="120" r="5" fill="#10212d"/>
+  <path d="M156 90l26-20-8 28Z" fill="url(#fishBody)"/>
+  <path d="M96 112c18-6 35-8 56-4" stroke="#e7fbff" stroke-opacity=".28" stroke-width="6" stroke-linecap="round"/>
+</svg>

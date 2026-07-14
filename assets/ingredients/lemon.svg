@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Lemon">
+  <defs>
+    <radialGradient id="lemonBody" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#fff7a8"/>
+      <stop offset="55%" stop-color="#f4d64b"/>
+      <stop offset="100%" stop-color="#d6a91f"/>
+    </radialGradient>
+    <linearGradient id="lemonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbd0" stop-opacity=".95"/>
+      <stop offset="100%" stop-color="#fffbd0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="120" cy="126" rx="78" ry="66" fill="url(#lemonBody)"/>
+  <ellipse cx="98" cy="102" rx="34" ry="24" fill="url(#lemonGlow)"/>
+  <path d="M120 62c-6 28-6 82 0 136" stroke="#fff5bc" stroke-width="8" stroke-linecap="round" opacity=".75"/>
+  <path d="M72 126c30-26 66-40 96-40" stroke="#fff5bc" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+  <path d="M83 101l78 78" stroke="#fff5bc" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+  <path d="M157 101l-78 78" stroke="#fff5bc" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Chili flakes">
+  <defs>
+    <linearGradient id="chiliJar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff7c4f"/>
+      <stop offset="100%" stop-color="#ce281c"/>
+    </linearGradient>
+    <linearGradient id="chiliCap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5f3e27"/>
+      <stop offset="100%" stop-color="#341f12"/>
+    </linearGradient>
+  </defs>
+  <path d="M92 68h56l6 20v84c0 12-10 20-22 20h-24c-12 0-22-8-22-20V88l6-20Z" fill="url(#chiliJar)"/>
+  <rect x="90" y="64" width="60" height="18" rx="8" fill="url(#chiliCap)"/>
+  <circle cx="102" cy="124" r="4" fill="#ffd6ab"/>
+  <circle cx="116" cy="134" r="4" fill="#ffd6ab"/>
+  <circle cx="132" cy="120" r="4" fill="#ffd6ab"/>
+  <circle cx="136" cy="142" r="4" fill="#ffd6ab"/>
+</svg>

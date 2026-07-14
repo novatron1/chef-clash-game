@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Rice bowl">
+  <defs>
+    <linearGradient id="riceBowl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c28c5a"/>
+      <stop offset="100%" stop-color="#8b5b35"/>
+    </linearGradient>
+    <linearGradient id="rice" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff9ee"/>
+      <stop offset="100%" stop-color="#efe1c4"/>
+    </linearGradient>
+  </defs>
+  <path d="M58 126h124c0 32-28 58-62 58s-62-26-62-58Z" fill="url(#riceBowl)"/>
+  <path d="M78 118c0-18 19-32 42-32s42 14 42 32-19 24-42 24-42-6-42-24Z" fill="url(#rice)"/>
+  <path d="M88 112c12 6 25 9 38 9" stroke="#fff6de" stroke-opacity=".3" stroke-width="6" stroke-linecap="round"/>
+</svg>
