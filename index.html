@@ -148,6 +148,10 @@
           </div>
         </div>
 
+        <div id="challengeBanner" class="challenge-banner hidden">
+          <span class="challenge-icon">🎤</span>
+          <span id="challengeText" class="challenge-text"></span>
+        </div>
         <div class="three-col">
           <aside class="glass panel">
             <div class="card-head">
@@ -221,6 +225,7 @@
               <div class="card-head">
                 <h3>Chef Coach</h3>
                 <button id="coachBtn" class="ghost">Apply tip</button>
+                <button id="aiCoachBtn" class="ghost hidden">AI Coach</button>
               </div>
               <p id="coachLines" class="tiny-note">Pick your base and ingredients. I’ll call the cook.</p>
             </div>
@@ -347,7 +352,9 @@
         <div class="glass panel judge-panel">
           <h3>Judge Comments</h3>
           <div id="judgeComments" class="judge-comments"></div>
-          <button id="aiJudgeBtn" class="ghost" style="margin-top:0.75rem">✨ AI Judge</button>
+          <div id="aiVerdicts" class="ai-verdicts hidden"></div>
+          <div id="battleBanter" class="battle-banter hidden"></div>
+          <button id="aiJudgeBtn" class="ghost" style="margin-top:0.75rem">✨ AI Deep Critique</button>
           <div id="aiJudgeResult" class="ai-judge-result hidden"></div>
         </div>
       </section>

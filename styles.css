@@ -2206,3 +2206,67 @@ input:focus,select:focus{
   0%, 100% { opacity: 0.6; }
   50% { opacity: 1; }
 }
+
+/* Challenge Banner */
+.challenge-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(255,107,53,0.08));
+  border: 1px solid rgba(255,215,0,0.2);
+  font-size: 0.95rem;
+}
+.challenge-banner.hidden { display: none; }
+.challenge-icon { font-size: 1.3rem; flex-shrink: 0; }
+.challenge-text { color: var(--text, #f0e6d3); line-height: 1.4; }
+
+/* AI Verdicts */
+.ai-verdicts {
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,215,0,0.12);
+}
+.ai-verdicts.hidden { display: none; }
+.ai-verdicts-head {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgba(255,215,0,0.6);
+  margin-bottom: 0.6rem;
+}
+.ai-verdict-block { margin-bottom: 0.6rem; }
+.ai-verdict-block:last-child { margin-bottom: 0; }
+.ai-verdict-chef {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-dim, #aaa);
+  margin-bottom: 0.3rem;
+}
+.ai-verdict-cat {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--text, #f0e6d3);
+  padding: 0.15rem 0;
+}
+.ai-verdict-cat span { margin-right: 0.3rem; }
+
+/* Battle Banter */
+.battle-banter {
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(255,107,53,0.08), rgba(255,215,0,0.06));
+  border: 1px solid rgba(255,107,53,0.15);
+}
+.battle-banter.hidden { display: none; }
+.battle-banter-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text, #f0e6d3);
+}
+.battle-banter-text span { margin-right: 0.4rem; }

@@ -563,6 +563,57 @@
       });
   }
 
+  function showAiCoach() {
+    if (!ns.llmJudge.hasKey()) { ns.llmJudge.showKeyNotice(showAiCoach); return; }
+    const btn = document.getElementById("aiCoachBtn");
+    const coachLines = document.getElementById("coachLines");
+    if (btn.disabled) return;
+    btn.disabled = true;
+    btn.textContent = "...coaching";
+    ns.llmJudge.getCoachTip(state, state.buildPlayer || "p1")
+      .then(tip => {
+        coachLines.textContent = "\U0001F9D1\u200D\U0001F373 " + tip;
+        btn.disabled = false;
+        btn.textContent = "AI Coach";
+      })
+      .catch(e => {
+        coachLines.textContent = "\u26A0\uFE0F Coach error: " + e.message;
+        btn.disabled = false;
+        btn.textContent = "AI Coach";
+      });
+  }
+
+  function injectAiVerdicts(v) {
+    const vdiv = document.getElementById("aiVerdicts");
+    if (!vdiv) return;
+    const p1cats = [
+      ["\U0001F31F", v.p1.flavor],
+      ["\U0001F9EA", v.p1.technique],
+      ["\U0001F4A1", v.p1.creativity],
+      ["\U0001F3AD", v.p1.presentation]
+    ];
+    const p2cats = [
+      ["\U0001F31F", v.p2.flavor],
+      ["\U0001F9EA", v.p2.technique],
+      ["\U0001F4A1", v.p2.creativity],
+      ["\U0001F3AD", v.p2.presentation]
+    ];
+    let h = "<div class=\"ai-verdicts-head\">Per-Category Verdict</div>";
+    h += "<div class=\"ai-verdict-block\"><div class=\"ai-verdict-chef\">Chef 1</div>";
+    p1cats.forEach(c => { if (c[1]) h += "<div class=\"ai-verdict-cat\"><span>" + c[0] + "</span> " + c[1] + "</div>"; });
+    h += "</div><div class=\"ai-verdict-block\"><div class=\"ai-verdict-chef\">Chef 2</div>";
+    p2cats.forEach(c => { if (c[1]) h += "<div class=\"ai-verdict-cat\"><span>" + c[0] + "</span> " + c[1] + "</div>"; });
+    h += "</div>";
+    vdiv.innerHTML = h;
+    vdiv.classList.remove("hidden");
+
+    const banter = document.getElementById("battleBanter");
+    if (banter && v.battle) {
+      banter.innerHTML = "<div class=\"battle-banter-text\"><span>\u2694\uFE0F</span> " + v.battle + "</div>";
+      banter.classList.remove("hidden");
+    }
+  }
+
   function returnHome() {
     state.career = false;
     state.careerBoss = null;
@@ -608,6 +659,7 @@
 
     document.getElementById("switchPlayerBtn").addEventListener("click", togglePlayer);
     document.getElementById("randomizeBtn").addEventListener("click", randomizeExtras);
+    document.getElementById("aiCoachBtn").addEventListener("click", showAiCoach);
     document.getElementById("clearBtn").addEventListener("click", clearExtras);
     document.getElementById("coachBtn").addEventListener("click", coachTip);
     document.getElementById("lockInBtn").addEventListener("click", lockDish);
