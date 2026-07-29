@@ -1,4 +1,4 @@
-const CACHE_NAME = "chef-clash-v5";
+const CACHE_NAME = "chef-clash-v6";
 const ASSETS = [
   "./",
   "./index.html",
