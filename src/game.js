@@ -535,6 +535,33 @@
     ui.toast(`Judge Test queued: ${state.openKitchenJudgeTest.total}`);
   }
 
+  function runAiJudge() {
+    const btn = document.getElementById("aiJudgeBtn");
+    const resultDiv = document.getElementById("aiJudgeResult");
+    if (btn.disabled) return;
+    btn.disabled = true;
+    btn.textContent = "✨ Judging...";
+    resultDiv.classList.remove("hidden");
+    resultDiv.innerHTML = '<div class="ai-judge-loading">🍳 The judge is tasting...</div>';
+    if (!ns.llmJudge.hasApiKey()) {
+      ns.llmJudge.showKeyDialog();
+      btn.disabled = false;
+      btn.textContent = "AI Judge";
+      return;
+    }
+    ns.llmJudge.judgeDish(state, state.buildPlayer || "p1")
+      .then(critique => {
+        resultDiv.innerHTML = '<div class="ai-judge-critique"><span class="ai-judge-icon">🎙️</span> ' + critique + '</div>';
+        btn.textContent = "AI Judge";
+        btn.disabled = false;
+      })
+      .catch(err => {
+        resultDiv.innerHTML = '<div class="ai-judge-error">⚠️ Judge is speechless: ' + err.message.replace(/</g, '&lt;') + '</div>';
+        btn.textContent = "AI Judge";
+        btn.disabled = false;
+      });
+  }
+
   function returnHome() {
     state.career = false;
     state.careerBoss = null;
@@ -568,6 +595,8 @@
     });
     document.getElementById("saveRecipeBtn").addEventListener("click", saveOpenKitchenRecipe);
     document.getElementById("judgeTestBtn").addEventListener("click", runOpenKitchenJudgeTest);
+    document.getElementById("aiJudgeBtn").addEventListener("click", runAiJudge);
+    
     document.getElementById("installBtn").addEventListener("click", async () => {
       if (!installPrompt) return;
       installPrompt.prompt();

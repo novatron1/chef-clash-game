@@ -1,4 +1,4 @@
-const CACHE_NAME = "chef-clash-v4";
+const CACHE_NAME = "chef-clash-v5";
 const ASSETS = [
   "./",
   "./index.html",
@@ -15,6 +15,7 @@ const ASSETS = [
   "./src/career.js",
   "./src/open-kitchen.js",
   "./src/game.js",
+  "./src/llm-judge.js",
   "./assets/ui/logo.svg",
   "./assets/ui/icon-192.svg",
   "./assets/ui/icon-512.svg",
