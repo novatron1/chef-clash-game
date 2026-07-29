@@ -543,12 +543,13 @@
     btn.textContent = "✨ Judging...";
     resultDiv.classList.remove("hidden");
     resultDiv.innerHTML = '<div class="ai-judge-loading">🍳 The judge is tasting...</div>';
-    if (!ns.llmJudge.hasApiKey()) {
+    if (!ns.llmJudge.hasKey()) {
       ns.llmJudge.showKeyDialog();
-      btn.disabled = false;
       btn.textContent = "AI Judge";
+      btn.disabled = false;
       return;
     }
+    resultDiv.innerHTML = '<div class="ai-judge-loading">🧙‍♂️ The judge is tasting...</div>';
     ns.llmJudge.judgeDish(state, state.buildPlayer || "p1")
       .then(critique => {
         resultDiv.innerHTML = '<div class="ai-judge-critique"><span class="ai-judge-icon">🎙️</span> ' + critique + '</div>';
@@ -556,7 +557,7 @@
         btn.disabled = false;
       })
       .catch(err => {
-        resultDiv.innerHTML = '<div class="ai-judge-error">⚠️ Judge is speechless: ' + err.message.replace(/</g, '&lt;') + '</div>';
+        resultDiv.innerHTML = '<div class="ai-judge-error">⚠️ Judge says: ' + err.message.replace(/</g, '&lt;') + '</div>';
         btn.textContent = "AI Judge";
         btn.disabled = false;
       });
