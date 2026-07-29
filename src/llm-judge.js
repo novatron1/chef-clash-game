@@ -14,6 +14,9 @@
     const base = state.base;
     const picked = (p.picks || []).map(id => data.INGREDIENTS.find(i => i.id === id)).filter(Boolean);
     const method = data.COOKING_METHODS?.find(m => m.id === p.method);
+    const logs = state.actionLog?.[key] || [];
+    const bonuses = state.actionBonuses?.[key] || {};
+    const bonusTotal = Math.round((bonuses.flavor || 0) + (bonuses.technique || 0) + (bonuses.creativity || 0) + (bonuses.presentation || 0));
     return {
       chef: p.name || "Chef",
       dish: `${base?.name || "Dish"} with ${picked.map(i => i.name).join(", ") || "fresh ingredients"}`,
@@ -27,7 +30,9 @@
       flavor: state.lastResult?.[key]?.flavor || 0,
       technique: state.lastResult?.[key]?.technique || 0,
       creativity: state.lastResult?.[key]?.creativity || 0,
-      presentation: state.lastResult?.[key]?.presentation || 0
+      presentation: state.lastResult?.[key]?.presentation || 0,
+      bonusTotal: bonusTotal,
+      actionLog: logs.slice(-3).join("; ") || "no events"
     };
   }
 
@@ -65,7 +70,7 @@
     const p2 = dishDesc(state, "p2");
     const challenge = state.challenge || "";
 
-    const prompt = `You are a TV cooking show judge. For each category below, write ONE short punchy sentence (under 15 words). Be specific to the dish.
+    const prompt = `You are a TV cooking show judge. For each category below, write ONE short punchy sentence (under 15 words). Be specific to the dish and reference what happened during cooking.
 
 CHALLENGE: "${challenge}"
 
@@ -75,6 +80,8 @@ Flavor (${p1.flavor}): ${p1.ingredients}
 Technique (${p1.technique}): ${p1.method}, ${p1.temp}°F, ${p1.time}min
 Creativity (${p1.creativity}): base ${p1.base}
 Presentation (${p1.presentation}): ${p1.plate}
+Cook action bonus: +${p1.bonusTotal}
+Cook moments: ${p1.actionLog}
 
 --- CHEF 2: ${p2.chef} ---
 Dish: ${p2.dish} | Score: ${p2.score}/100
@@ -82,6 +89,8 @@ Flavor (${p2.flavor}): ${p2.ingredients}
 Technique (${p2.technique}): ${p2.method}, ${p2.temp}°F, ${p2.time}min
 Creativity (${p2.creativity}): base ${p2.base}
 Presentation (${p2.presentation}): ${p2.plate}
+Cook action bonus: +${p2.bonusTotal}
+Cook moments: ${p2.actionLog}
 
 Respond EXACTLY in this format (no extra text):
 V1_FLAVOR: ...
